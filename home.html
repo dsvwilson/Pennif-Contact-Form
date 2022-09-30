@@ -4,7 +4,12 @@
     <meta charset = "UTF-8" >
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge" >
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
-    <link rel = "stylesheet" href = "style.css" type = "text/css" media = "screen" >
+    <link rel = "stylesheet" href = "styles/mobile_style.css" type = "text/css" media = "screen" >
+    <link rel = "stylesheet" href = "styles/tablet_style.css" type = "text/css" media = "screen" >
+    <link rel = "stylesheet" href = "styles/desktop_style.css" type = "text/css" media = "screen" >
+    <link rel = "preconnect" href = "https://fonts.googleapis.com" >
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin >
+    <link href = "https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel = "stylesheet" >
     <title>Pennif Contact Form</title>
 </head>
 
@@ -16,15 +21,19 @@
 
 </header>
 
+<div class = "welcome-notice" >
+    <p>Welcome! Please fill in the form to reach out to us.</p>
+</div>
 
-<section class = "form" >
+
+<div class = "form" >
     
     <form method="post">
 
     <div class = "form-fields" > 
         <label for = "first-name" class = "labels" >
 
-            First Name <br> <input name = "first-name" id = "first-name" />
+            <div class = "text-labels" > First Name </div> <br> <input name = "first-name" id = "first-name" />
         
         </label>
     </div>
@@ -33,7 +42,7 @@
     <div class = "form-fields" >
         <label for = "last-name" class = "labels" >
 
-            Last Name <br> <input name = "last-name" id = "last-name" />
+             <div class = "text-labels" > Last Name </div> <br> <input name = "last-name" id = "last-name" />
 
         </label> 
     </div>
@@ -41,7 +50,7 @@
     <div class = "form-fields" >
         <label for = "email" class = "labels" >
 
-            Email Address <br> <input name = "email-address" id = "email" />
+              <div class = "text-labels"> Email Address </div> <br> <input name = "email-address" id = "email" />
 
         </label>
     </div>
@@ -49,7 +58,7 @@
     <div class = "dropdown" >
         <label for = "help" class = "labels" >
 
-            How can we help you today?
+            <div class = "text-labels"> How can we help you today? </div>
             
             <br>
 
@@ -66,20 +75,24 @@
     <div class = "form-fields" >
         <label for = "extras" class = "labels" >
 
-        What would you like us to do for you today? 
+            <div class = "text-labels"> What would you like us to do for you today? </div> 
 
         <br>
 
-            <textarea name = "extras" rows = "5" cols = "50" id = "extras" >
+            <textarea name = "extras" rows = "5" cols = "40" id = "extras" >
 
             </textarea> 
 
         </label>
+
+        <input type = "submit" value = "Send" id = "send-button" >
+
     </div>
 
     </form>
 
-</section>
+</div>
+
 
 </body>
 </html>

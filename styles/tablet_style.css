@@ -1,0 +1,49 @@
+/* Mobile responsiveness using Media Queries for tablet views 600px and above (until desktop resolution). */
+
+@media only screen and (min-width: 600px) {
+
+    header.site-header {
+        height: 250px;
+    }
+
+    header.site-header > h1 {
+        font-size: 5vw;
+    }
+
+    .welcome-notice p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .form {
+        margin: auto;
+        width: 590px;
+        display: block;
+        padding-top: 30px;
+    }
+
+    #first-name, #last-name, #email, #extras {
+        width: 510px;
+        padding: 3%;
+        border: 1px solid grey;
+        border-radius: 10px 0 10px 0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+
+    #help {
+        width: 545px;
+        padding: 3%;
+        border: 1px solid grey;
+        border-radius: 10px 0 10px 0;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    }
+
+    #send-button {
+        width: 545px;
+        margin-top: 30px;
+        padding: 5%;
+        border: 10x solid grey;
+        border-radius: 10px 0 10px 0;
+        background-color: antiquewhite;
+    }
+}

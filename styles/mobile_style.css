@@ -1,0 +1,82 @@
+/* Mobile-first design adopted. Makes for faster loading times on mobile devices. Media Queries were used to adjust the other displays in different files. */
+
+body {
+    background-color: #f5f7fc;
+}
+
+header.site-header {
+    background: no-repeat left/cover url(../assets/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg);
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 150px;
+    min-width: 120px;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+    margin-bottom: 40px;
+}
+
+header.site-header > h1 {
+    font-size: 7vw;
+    margin: 0 auto;
+    font-family: 'Alkalami', serif;
+}
+
+.welcome-notice {
+    margin: auto;
+    padding: 3%;
+    background-color: antiquewhite;
+    border: 1px solid grey;
+    width: 80%;
+    display: block;
+}
+
+.welcome-notice p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.form {
+    margin: auto;
+    width: 380px;
+    display: block;
+    padding-top: 30px;
+}
+
+.form .text-labels {
+    padding-bottom: 2px;
+}
+
+.form-fields, .dropdown {
+    padding: 4%;
+}
+
+#first-name, #last-name, #email, #extras {
+    width: 340px;
+    padding: 3%;
+    border: 1px solid grey;
+    border-radius: 10px 0 10px 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#help {
+    width: 365px;
+    padding: 3%;
+    border: 1px solid grey;
+    border-radius: 10px 0 10px 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#send-button {
+    width: 365px;
+    margin-top: 30px;
+    padding: 5%;
+    border: 10x solid grey;
+    border-radius: 10px 0 10px 0;
+    background-color: antiquewhite;
+}
+
+#send-button:hover {
+    background-color: #ded0bf;
+}
