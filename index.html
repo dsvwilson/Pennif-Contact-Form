@@ -8,59 +8,66 @@
 </head>
 
 <body>
+
+<section class = "form" >
     
-<form method="post">
+    <form method="post">
 
-    <label>
+    <div class = "form-fields" > 
+        <label for = "first-name" >
 
-        First Name <input name = "first-name" />
-    
-    </label>
-
-
-
-    <label>
-
-        Last Name <input name = "last-name" />
-
-    </label> 
-
-
-
-    <label>
-
-        Email Address <input name = "email-address" />
-
-    </label>
-
+            First Name <input name = "first-name" id = "first-name" />
         
-
-    <label>
-
-        How can we help you today? 
-
-            <select name = "help-dropdown" >
-                <option name = "website" value = "help with my website" selected> Help with my website </option>
-                <option name = "social" value = "help with my social media account" > Help with my socila media account </option>
-                <option name = "coursework" value = "help with my web development coursework" > Help with my web development coursework </option>
-                <option name = "other" value = "other" > Other (please provide more information below) </option>
-            </select>
-
-    </label>
+        </label>
+    </div>
 
 
+    <div class = "form-fields" >
+        <label for = "last-name" >
 
-    <label>
+            Last Name <input name = "last-name" id = "last-name" />
+
+        </label> 
+    </div>
+
+    <div class = "form-fields" >
+        <label for = "email" >
+
+            Email Address <input name = "email-address" id = "email" />
+
+        </label>
+    </div>
+            
+    <div class = "dropdown" >
+        <label for = "help" >
+
+            How can we help you today? 
+
+                <select name = "help-dropdown" id = "help" >
+                    <option value = "help with my website" selected> Help with my website </option>
+                    <option value = "help with my social media account" > Help with my socila media account </option>
+                    <option value = "help with my web development coursework" > Help with my web development coursework </option>
+                    <option value = "other" > Other (please provide more information below) </option>
+                </select>
+
+        </label>
+    </div>
+
+    <div class = "form-fields" >
+        <label for = "extras" >
 
         What would you like us to do for you today? 
 
-            <textarea name = "extras" rows = "5" cols = "50">
-                
+            <textarea name = "extras" rows = "5" cols = "50" id = "extras" >
+
             </textarea> 
 
-    </label>
+        </label>
+    </div>
 
-</form>
+    </form>
+
+</section>
 
 </body>
 </html>
