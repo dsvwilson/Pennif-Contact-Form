@@ -10,7 +10,7 @@
     <link rel = "preconnect" href = "https://fonts.googleapis.com" >
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin >
     <link href = "https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel = "stylesheet" >
-    <script type = "text/javascript" src = "form-validation.js" ></script>
+    
     <title>Pennif Contact Form</title>
 </head>
 
@@ -29,7 +29,7 @@
 
 <div class = "form" >
     
-    <form method = "post" action = "" target = "" novalidate >
+    <form method = "post" action = "" target = "" >
 
     <div class = "form-fields" > 
         <label for = "first-name" class = "labels" >
@@ -59,7 +59,7 @@
 
               <div class = "text-labels"> Email Address (required) </div> 
               <br> 
-              <input name = "email-address" id = "email" type = "email" required />
+              <input name = "email-address" id = "email" type = "email" />
               <span class = "validation-error-message" aria-live = "polite" > </span>
 
         </label>
@@ -103,6 +103,7 @@
 
 </div>
 
+<script type = "text/javascript" src = "form-validation.js" > </script>
 
 </body>
 </html>
