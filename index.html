@@ -10,6 +10,7 @@
     <link rel = "preconnect" href = "https://fonts.googleapis.com" >
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin >
     <link href = "https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel = "stylesheet" >
+    <script type = "text/javascript" src = "form-validation.js" ></script>
     <title>Pennif Contact Form</title>
 </head>
 
@@ -28,12 +29,15 @@
 
 <div class = "form" >
     
-    <form method="post">
+    <form method = "post" action = "" target = "" novalidate >
 
     <div class = "form-fields" > 
         <label for = "first-name" class = "labels" >
 
-            <div class = "text-labels" > First Name </div> <br> <input name = "first-name" id = "first-name" />
+            <div class = "text-labels" > First Name (required) </div> 
+            <br> 
+            <input name = "first-name" id = "first-name" type = "text" required />
+            <span class = "validation-error-message" aria-live = "polite" > </span>
         
         </label>
     </div>
@@ -42,7 +46,10 @@
     <div class = "form-fields" >
         <label for = "last-name" class = "labels" >
 
-             <div class = "text-labels" > Last Name </div> <br> <input name = "last-name" id = "last-name" />
+             <div class = "text-labels" > Last Name (required) </div> 
+             <br> 
+             <input name = "last-name" id = "last-name" type = "text" required />
+             <span class = "validation-error-message" aria-live = "polite" > </span>
 
         </label> 
     </div>
@@ -50,7 +57,10 @@
     <div class = "form-fields" >
         <label for = "email" class = "labels" >
 
-              <div class = "text-labels"> Email Address </div> <br> <input name = "email-address" id = "email" />
+              <div class = "text-labels"> Email Address (required) </div> 
+              <br> 
+              <input name = "email-address" id = "email" type = "email" required />
+              <span class = "validation-error-message" aria-live = "polite" > </span>
 
         </label>
     </div>
