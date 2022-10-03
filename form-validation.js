@@ -52,7 +52,7 @@ function showEmailError() {
 
   } else if (email.validity.typeMismatch) {
     
-    formEmailError.textContent = "Entered value needs to be an e-mail address.";
+    formEmailError.textContent = "Keep typing. This field needs an email address.";
 
   }
 
