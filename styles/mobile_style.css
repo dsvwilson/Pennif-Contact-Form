@@ -80,3 +80,19 @@ header.site-header > h1 {
 #send-button:hover {
     background-color: #ded0bf;
 }
+
+.validation-error-message {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .validation-error-message.active {
+    padding: 0.3em;
+  }
